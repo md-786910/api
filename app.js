@@ -7,6 +7,8 @@ const bodyParser = require('body-parser')
 const path = require('path')
 
 
+const port = 5000 || process.env.PORT
+
 let id = 1;
 // config file
 dotenv.config({ path: "config.env" })
@@ -139,6 +141,6 @@ app.post("/user_data", upload, async (req, res) => {
 })
 
 
-app.listen(5000 || process.env.PORT, () => {
+app.listen(port, "0.0.0.0", () => {
     console.log("listening on port " + 5000)
 })
