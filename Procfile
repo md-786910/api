@@ -1,1 +1,1 @@
-web: bundle exec thin start -p process.env.PORT
+web: node app.js
