@@ -16,7 +16,7 @@ require("./db/connection")
 const apiModel = require("./model/schema")
 
 // set bodyParser
-// app.use(express.bodyParser({ extended: true }))
+app.use(express.bodyParser({ extended: true }))
 app.use(express.urlencoded())
 app.use(express.json())
 
