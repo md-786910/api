@@ -7,6 +7,7 @@ const bodyParser = require('body-parser')
 const path = require('path')
 
 
+let id = 1;
 // config file
 dotenv.config({ path: "config.env" })
 
@@ -16,8 +17,7 @@ require("./db/connection")
 const apiModel = require("./model/schema")
 
 // set bodyParser
-app.use(express.bodyParser({ extended: true }))
-app.use(express.urlencoded())
+app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 // set static path ->public 
