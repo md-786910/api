@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url("../image/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.containerFull {
+  height: 100vh;
+}
+.setBorder {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.setBorder img {
+  background-color: transparent;
+}
+#img1 {
+  transform: rotate(-180deg);
+}
+
+#imgTop {
+  display: none;
+}
+.title {
+  position: relative;
+  top: 30px;
+}
+.title h1 {
+  color: beige;
+  font-weight: bold;
+}
+
+.form {
+}
+
+.center_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.form_md {
+  width: 50%;
+}
+input {
+  width: 100% !important;
+}
+.content {
+  margin-top: 2em;
+  text-align: center;
+  color: bisque;
+}
+.content h3 {
+  font-weight: 500;
+}
+.footer {
+  bottom: 0px;
+  text-align: center;
+}
+.footer_image {
+  display: block;
+  object-fit: contain;
+}
+
+span {
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 30px;
+}
+.svg {
+  display: none;
+}
+/* medai query */
+
+@media screen and (max-width: 790px) {
+  #imgTop {
+    display: block;
+    width: 100%;
+    /* border: 1px solid red; */
+
+    object-fit: contain;
+  }
+  .svg {
+    display: block;
+    width: 100%;
+  }
+  #img2,
+  #img1 {
+    display: none;
+  }
+  .title {
+    margin-top: -3em;
+  }
+  .content h3 {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .content {
+    margin-top: 2.5em;
+  }
+  .content h3 {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .title h1 {
+    font-size: 30px;
+  }
+  #imgTop {
+    margin-top: -10.5em;
+    width: 100%;
+  }
+
+  .center_div {
+    width: 100%;
+  }
+
+  .content {
+    margin-top: 2.5em;
+    border-top: 10px solid rgb(97, 83, 83);
+  }
+  .form_md {
+    width: 100%;
+  }
+
+  .content h3 {
+    margin-top: 5px;
+    color: white;
+    font-size: 20px;
+  }
+  .footer {
+    margin-top: 4em;
+  }
+  #footer_image {
+    width: 100%;
+    border-bottom: 2px solid rgb(97, 83, 83);
+  }
+  .svg {
+    width: 100%;
+    height: 100;
+  }
+}
