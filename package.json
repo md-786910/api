@@ -12,8 +12,7 @@
     "multer": "^1.4.4"
   },
   "scripts": {
-    "postinstall": "npm run build",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
